@@ -35,6 +35,9 @@ public class FishingMinigameController : MonoBehaviour
     private Action<bool> onFinish;
     private bool running;
 
+    public bool IsRunning => running;
+    public FishData CurrentFish => currentFish;
+
     void Awake()
     {
         Instance = this;
